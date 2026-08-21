@@ -5,8 +5,8 @@
       <q-input v-model.number="age" filled type="number" label="Your age (อายุ) *" lazy-rules :rules="[ val => val !== null && val !== '' || 'Please type your age', val => val > 0 && val < 100 || 'Please type a real age']" />
       <q-toggle v-model="accept" label="I accept the license and terms (我接受许可和条款语言 - ライセンスと規約に同意します)" />
       <div>
-        <q-btn label="SUBMIT" type="submit" color="primary" />
-        <q-btn label="RESET" type="reset" color="primary" flat class="q-ml-sm" />
+        <q-btn label="SUBMIT (提出する)" type="submit" color="primary" />
+        <q-btn label="RESET (リセット)" type="reset" color="primary" flat class="q-ml-sm" />
       </div>
     </q-form>
   </q-page>
