@@ -5,9 +5,9 @@
       <q-input v-model.number="age" filled type="number" label="Your age *" lazy-rules :rules="[ val => val !== null && val !== '' || 'Please type your age', val => val > 0 && val < 100 || 'Please type a real age']" />
       <q-toggle v-model="accept" label="I accept the license and terms" />
       <div>
-        <q-btn label="SUBMIT" type="submit" color="primary" />
-        <q-btn label="RESET" type="reset" color="primary" flat class="q-ml-sm" />
-      </div>
+        <q-input v-model="name" filled label="Your name (ชื่อ-สกุล) *" hint="Name and surname" />
+        <q-input v-model.number="age" filled type="number" label="Your age (อายุ) *" />
+    </div>   
     </q-form>
   </q-page>
 </template>
